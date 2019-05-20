@@ -1,0 +1,16 @@
+# Enter your network definition here.
+# Use Shift+Enter to update the visualization.
+name: "VGG_ILSVRC_16_layers"
+layer {
+  name: 'input-data'
+  type: 'Python'
+  top: 'data'
+  top: 'im_info'
+  top: 'gt_boxes'
+  python_param {
+    #module: 'roi_data_layer.layer'
+    module: 'rotation.rlayer'
+    layer: 'RoIDataLayer'
+    param_str: "'num_classes': 2"
+  }
+}

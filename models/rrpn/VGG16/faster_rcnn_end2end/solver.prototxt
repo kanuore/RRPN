@@ -1,0 +1,17 @@
+train_net: "models/rrpn/VGG16/faster_rcnn_end2end/study_lines.prototxt"
+base_lr: 0.001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 2000
+display: 20
+average_loss: 20
+# iter_size: 1
+momentum: 0.9
+weight_decay: 0.0005
+# We disable standard caffe solver snapshotting and implement our own snapshot
+# function
+snapshot: 0
+# We still use the snapshot prefix, though
+snapshot_prefix: "vgg16_faster_rcnn"
+# 相当于读取batchsize*itersize个图像才做一下gradient decen
+iter_size: 2

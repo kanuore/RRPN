@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<target>   
+    <image>
+        <imageName>/home/lbk/ocr/RRPN-master/data/demo/test_line_data/20.jpg</imageName>
+        <resolution x="500" y="500"/>
+        <taggedRectangles>
+            <taggedRectangle height="29" width="500" x="0" y="131"/>
+            <taggedRectangle height="28" width="496" x="4" y="181"/>
+            <taggedRectangle height="20" width="493" x="7" y="238"/>
+            <taggedRectangle height="76" width="489" x="11" y="292"/>
+        </taggedRectangles>
+    </image>
+</target>
